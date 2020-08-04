@@ -4,63 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Egy szuper oldal</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <container class=table>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/pages/products.html">Products</a>
-        </li>
-        <li>
-            <a href="/pages/orders.html">Orders</a>
-        </li>
-        <li>
-            <a href="/about.html">About</a>
-        </li>
-    </ul>
-        </container class=table>
-    <h1>Fantastic burger</h1>
-    <ul>
-        <li>
-            Meat lover
-            <ul>
-                <li>beef</li>
-                <li>pork</li>
-                <li>turkey</li>
-            </ul>
-        </li>
-        <li>Vegetarian</li>
-        <li>Piedone</li>
-    </ul>
-      
-      
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <div>
+                    <label for="name">Név: *</label>
+                    <input id="name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">E-mail: *</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div>
+                    <label for="address">Cím: *</label>
+                    <input id="address" type="text" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés:</label>
+                    <textarea id="comment" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Termék adatai</legend>
 
-    <h2>Step of order</h2>
-
-    <ol>
-        <li>Choose a burger</li>
-        <li>Buy it</li>
-        <li>Give your address</li>
-        <li>Eat it</li>
-    </ol>
-
-    <a href="https://www.tasteofhome.com/recipes/barbecued-burgers/">
-        Barbecued Burgers
-    </a>
-
-    <a href="pages/orders.html">
-        Orders
-    </a>
-    <a target="blank" href="https://www.tasteofhome.com/recipes/barbecued-burgers/">
-        <img width="56" src="img/burger.jpg" alt="tasty burger"></a>
-
-    <img src="img/burger.jpg" alt="tasty burger">
+                <span>Extra feltét</span>
+                <div>
+                    <input checked id="nothing" name="extra" type="radio" value="0">
+                    <label for="nothing">Nem kérek</label>
+                </div>
+                <div>
+                    <input unchecked id="cheese" name="extra" type="radio" value="300">
+                    <label for="cheese">Sajt</label>
+                </div>
+                <div>
+                    <input unchecked id="double-cheese" name="extra" type="radio" value="600">
+                    <label for="double-cheese">Dupla sajt</label>
+                </div>
+                <div>
+                    <input unchecked id="double-meat" name="extra" type="radio" value="1000">
+                    <label for="double-meat">Dupla hús</label>
+                </div>
+                <div>
+                    <input unchecked id="double-double" name="extra" type="radio" value="1600">
+                    <label for="double-double">Dupla sajt-dupla hús</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
